@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>404 Not Found | meow.md</title>
+    <title>404 Not Found | Machine_Learning_in_GIFU</title>
 
     
-<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 
 
 
-<meta name="author" content="" />
-<meta name="description" content="" />
+<meta name="author" content="tutii" />
+<meta name="description" content="g1eny0ung 的生活记录～" />
 
 
 
@@ -23,7 +23,7 @@
 
 
 <meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="g1eny0ung 的生活记录～" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://Ressentintinmen.github.io/404.html" />
 
@@ -32,7 +32,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="g1eny0ung 的生活记录～"/>
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -42,9 +42,30 @@
 <link rel="stylesheet" href="/css/site.css" />
 
 
+<style>
+  a {
+    color: seagreen !important;
+  }
+</style>
 
 
 
+<style>
+  .inverted a {
+     color: darkseagreen !important;
+  }
+</style>
+
+
+
+<style>
+  body {
+    
+      background-color: black;
+    
+    
+  }
+</style>
 
 
      
@@ -52,7 +73,7 @@
 
   <body>
     
-<nav class="ui secondary menu dream-menu">
+<nav class="ui secondary inverted menu dream-menu">
 
   <div class="item">
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
@@ -62,6 +83,10 @@
   </div>
   <div class="item">
     <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
   </div>
   
 </nav>
@@ -74,12 +99,12 @@
 <div class="dream-404-container">
   <div class="ui basic center aligned segment">
     
-      <h1 class="ui header">
-        Oops...You are lost in dream.
+      <h1 class="ui inverted header">
+        Oops ... You are lost in dream.
         <div class="sub header">Don't worry though, click the button below to wake up.</div>
       </h1>
       <p>
-        <button class="ui button" onclick="window.location.href = '/'">Back to home</button>
+        <button class="ui inverted button" onclick="window.location.href = '/'">Back to home</button>
       </p>
     
   </div>
@@ -102,6 +127,26 @@
       <div class="ui bottom attached segment">
         <nav class="ui secondary menu dream-menu dream-socials">
   
+    <div class="item">
+      <a href="/index.xml">
+        <i class="large rss square icon" title="RSS"></i>
+      </a>
+    </div>
+  
+  
+    <div class="item">
+      <a href="mailto:pullmeunder.pullmetothehell@gmail.com">
+        <i class="large mail icon" title="Email"></i>
+      </a>
+    </div>
+  
+
+  
+    <div class="item">
+      <a href="https://twitter.com/tuttitt" target="_blank">
+        <i class="large twitter icon" title="Twitter"></i>
+      </a>
+    </div>
   
 
   
@@ -113,7 +158,11 @@
   
 
   
-
+    <div class="item">
+      <a href="https://github.com/RessenTINTINmen" target="_blank">
+        <i class="large github icon" title="GitHub"></i>
+      </a>
+    </div>
   
 
   
@@ -131,6 +180,29 @@
 
   
     
+      <section class="sixteen wide mobile eight wide tablet eight wide computer column dream-column">
+        <footer class="ui segment">
+          <div id="disqus_thread"></div>
+          <script>
+            
+
+
+            var disqus_config = function () {
+              this.page.url = 'https:\/\/Ressentintinmen.github.io\/404.html';  
+              this.page.identifier = '/'; 
+            };
+
+            (function() { 
+              var d = document, s = d.createElement('script');
+              s.src = 'https://' + 'tutii' + '.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </footer>
+      </section>
+    
   
 </div>
 
@@ -140,7 +212,7 @@
     </div>
 
     <script>
-  window.darkNav =  null 
+  window.darkNav =  true 
   window.hasTwitterEmbed =  null 
 
   if (window.hasTwitterEmbed) {
@@ -172,6 +244,28 @@
 <script src="/js/theme.js"></script>
 
      
+
+    
+      <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/Ressentintinmen.github.io/index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
 
     
 
