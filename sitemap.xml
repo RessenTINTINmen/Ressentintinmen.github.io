@@ -3,15 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://Ressentintinmen.github.io/categories/</loc>
+    <loc>https://Ressentintinmen.github.io/posts/20200916_hello_new_blog/</loc>
+    <lastmod>2020-09-16T23:56:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://Ressentintinmen.github.io/</loc>
+    <lastmod>2020-09-16T23:56:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Ressentintinmen.github.io/posts/</loc>
+    <lastmod>2020-09-16T23:56:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://Ressentintinmen.github.io/tags/</loc>
+    <lastmod>2020-09-16T23:56:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Ressentintinmen.github.io/tags/%E8%87%AA%E5%B7%B1%E7%B4%B9%E4%BB%8B/</loc>
+    <lastmod>2020-09-16T23:56:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Ressentintinmen.github.io/categories/</loc>
   </url>
   
 </urlset>
